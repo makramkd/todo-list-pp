@@ -18,6 +18,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CreateTodolistActivity"
+            android:label="@string/title_activity_create_todolist"
+            android:parentActivityName=".ViewTodolistsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.makram.todolist.ViewTodolistsActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".ViewTodolistsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.makram.todolist.ViewTodolistsActivity" />
+        </activity>
+        <activity
+            android:name=".ExportActivity"
+            android:label="@string/title_activity_export"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
